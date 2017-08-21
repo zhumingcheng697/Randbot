@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */; };
+		94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5227E1F4B6F4200D86E83 /* ViewController.swift */; };
+		94C522821F4B6F4200D86E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C522801F4B6F4200D86E83 /* Main.storyboard */; };
+		94C522841F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522831F4B6F4200D86E83 /* Assets.xcassets */; };
+		94C522871F4B6F4200D86E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C522851F4B6F4200D86E83 /* LaunchScreen.storyboard */; };
+		94C5228C1F4B6F4200D86E83 /* Randbot WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94C5228B1F4B6F4200D86E83 /* Randbot WatchKit App.app */; };
+		94C522921F4B6F4200D86E83 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C522901F4B6F4200D86E83 /* Interface.storyboard */; };
+		94C522941F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522931F4B6F4200D86E83 /* Assets.xcassets */; };
+		94C5229B1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94C5229A1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94C522A21F4B6F4200D86E83 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A11F4B6F4200D86E83 /* InterfaceController.swift */; };
+		94C522A41F4B6F4200D86E83 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A31F4B6F4200D86E83 /* ExtensionDelegate.swift */; };
+		94C522A61F4B6F4200D86E83 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A51F4B6F4200D86E83 /* NotificationController.swift */; };
+		94C522A81F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522A71F4B6F4200D86E83 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94C5228D1F4B6F4200D86E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C522711F4B6F4200D86E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94C5228A1F4B6F4200D86E83;
+			remoteInfo = "Randbot WatchKit App";
+		};
+		94C5229C1F4B6F4200D86E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C522711F4B6F4200D86E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94C522991F4B6F4200D86E83;
+			remoteInfo = "Randbot WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94C522AF1F4B6F4200D86E83 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94C5229B1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C522B31F4B6F4200D86E83 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94C5228C1F4B6F4200D86E83 /* Randbot WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94C522791F4B6F4200D86E83 /* Randbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94C5227E1F4B6F4200D86E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94C522811F4B6F4200D86E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94C522831F4B6F4200D86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94C522861F4B6F4200D86E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94C522881F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C5228B1F4B6F4200D86E83 /* Randbot WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Randbot WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C522911F4B6F4200D86E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		94C522931F4B6F4200D86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94C522951F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C5229A1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Randbot WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C522A01F4B6F4200D86E83 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		94C522A11F4B6F4200D86E83 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		94C522A31F4B6F4200D86E83 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		94C522A51F4B6F4200D86E83 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94C522A71F4B6F4200D86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94C522A91F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94C522761F4B6F4200D86E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C522971F4B6F4200D86E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94C522701F4B6F4200D86E83 = {
+			isa = PBXGroup;
+			children = (
+				94C5227B1F4B6F4200D86E83 /* Randbot */,
+				94C5228F1F4B6F4200D86E83 /* Randbot WatchKit App */,
+				94C5229E1F4B6F4200D86E83 /* Randbot WatchKit Extension */,
+				94C5227A1F4B6F4200D86E83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94C5227A1F4B6F4200D86E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94C522791F4B6F4200D86E83 /* Randbot.app */,
+				94C5228B1F4B6F4200D86E83 /* Randbot WatchKit App.app */,
+				94C5229A1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94C5227B1F4B6F4200D86E83 /* Randbot */ = {
+			isa = PBXGroup;
+			children = (
+				94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */,
+				94C5227E1F4B6F4200D86E83 /* ViewController.swift */,
+				94C522801F4B6F4200D86E83 /* Main.storyboard */,
+				94C522831F4B6F4200D86E83 /* Assets.xcassets */,
+				94C522851F4B6F4200D86E83 /* LaunchScreen.storyboard */,
+				94C522881F4B6F4200D86E83 /* Info.plist */,
+			);
+			path = Randbot;
+			sourceTree = "<group>";
+		};
+		94C5228F1F4B6F4200D86E83 /* Randbot WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				94C522901F4B6F4200D86E83 /* Interface.storyboard */,
+				94C522931F4B6F4200D86E83 /* Assets.xcassets */,
+				94C522951F4B6F4200D86E83 /* Info.plist */,
+			);
+			path = "Randbot WatchKit App";
+			sourceTree = "<group>";
+		};
+		94C5229E1F4B6F4200D86E83 /* Randbot WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94C522A11F4B6F4200D86E83 /* InterfaceController.swift */,
+				94C522A31F4B6F4200D86E83 /* ExtensionDelegate.swift */,
+				94C522A51F4B6F4200D86E83 /* NotificationController.swift */,
+				94C522A71F4B6F4200D86E83 /* Assets.xcassets */,
+				94C522A91F4B6F4200D86E83 /* Info.plist */,
+				94C5229F1F4B6F4200D86E83 /* Supporting Files */,
+			);
+			path = "Randbot WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		94C5229F1F4B6F4200D86E83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94C522A01F4B6F4200D86E83 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94C522781F4B6F4200D86E83 /* Randbot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C522B41F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot" */;
+			buildPhases = (
+				94C522751F4B6F4200D86E83 /* Sources */,
+				94C522761F4B6F4200D86E83 /* Frameworks */,
+				94C522771F4B6F4200D86E83 /* Resources */,
+				94C522B31F4B6F4200D86E83 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94C5228E1F4B6F4200D86E83 /* PBXTargetDependency */,
+			);
+			name = Randbot;
+			productName = Randbot;
+			productReference = 94C522791F4B6F4200D86E83 /* Randbot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94C5228A1F4B6F4200D86E83 /* Randbot WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C522B01F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot WatchKit App" */;
+			buildPhases = (
+				94C522891F4B6F4200D86E83 /* Resources */,
+				94C522AF1F4B6F4200D86E83 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94C5229D1F4B6F4200D86E83 /* PBXTargetDependency */,
+			);
+			name = "Randbot WatchKit App";
+			productName = "Randbot WatchKit App";
+			productReference = 94C5228B1F4B6F4200D86E83 /* Randbot WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94C522991F4B6F4200D86E83 /* Randbot WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C522AC1F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot WatchKit Extension" */;
+			buildPhases = (
+				94C522961F4B6F4200D86E83 /* Sources */,
+				94C522971F4B6F4200D86E83 /* Frameworks */,
+				94C522981F4B6F4200D86E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Randbot WatchKit Extension";
+			productName = "Randbot WatchKit Extension";
+			productReference = 94C5229A1F4B6F4200D86E83 /* Randbot WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94C522711F4B6F4200D86E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ID Tech";
+				TargetAttributes = {
+					94C522781F4B6F4200D86E83 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					94C5228A1F4B6F4200D86E83 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					94C522991F4B6F4200D86E83 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 94C522741F4B6F4200D86E83 /* Build configuration list for PBXProject "Randbot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94C522701F4B6F4200D86E83;
+			productRefGroup = 94C5227A1F4B6F4200D86E83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94C522781F4B6F4200D86E83 /* Randbot */,
+				94C5228A1F4B6F4200D86E83 /* Randbot WatchKit App */,
+				94C522991F4B6F4200D86E83 /* Randbot WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94C522771F4B6F4200D86E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C522871F4B6F4200D86E83 /* LaunchScreen.storyboard in Resources */,
+				94C522841F4B6F4200D86E83 /* Assets.xcassets in Resources */,
+				94C522821F4B6F4200D86E83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C522891F4B6F4200D86E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C522941F4B6F4200D86E83 /* Assets.xcassets in Resources */,
+				94C522921F4B6F4200D86E83 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C522981F4B6F4200D86E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C522A81F4B6F4200D86E83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94C522751F4B6F4200D86E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */,
+				94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C522961F4B6F4200D86E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C522A61F4B6F4200D86E83 /* NotificationController.swift in Sources */,
+				94C522A41F4B6F4200D86E83 /* ExtensionDelegate.swift in Sources */,
+				94C522A21F4B6F4200D86E83 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94C5228E1F4B6F4200D86E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94C5228A1F4B6F4200D86E83 /* Randbot WatchKit App */;
+			targetProxy = 94C5228D1F4B6F4200D86E83 /* PBXContainerItemProxy */;
+		};
+		94C5229D1F4B6F4200D86E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94C522991F4B6F4200D86E83 /* Randbot WatchKit Extension */;
+			targetProxy = 94C5229C1F4B6F4200D86E83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94C522801F4B6F4200D86E83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C522811F4B6F4200D86E83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94C522851F4B6F4200D86E83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C522861F4B6F4200D86E83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94C522901F4B6F4200D86E83 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C522911F4B6F4200D86E83 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94C522AA1F4B6F4200D86E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94C522AB1F4B6F4200D86E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94C522AD1F4B6F4200D86E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Randbot WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		94C522AE1F4B6F4200D86E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Randbot WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		94C522B11F4B6F4200D86E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Randbot_WatchKit_Extension;
+				INFOPLIST_FILE = "Randbot WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		94C522B21F4B6F4200D86E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Randbot_WatchKit_Extension;
+				INFOPLIST_FILE = "Randbot WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		94C522B51F4B6F4200D86E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Randbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94C522B61F4B6F4200D86E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Randbot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idtech.McCoy.Randbot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94C522741F4B6F4200D86E83 /* Build configuration list for PBXProject "Randbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C522AA1F4B6F4200D86E83 /* Debug */,
+				94C522AB1F4B6F4200D86E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C522AC1F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C522AD1F4B6F4200D86E83 /* Debug */,
+				94C522AE1F4B6F4200D86E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94C522B01F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C522B11F4B6F4200D86E83 /* Debug */,
+				94C522B21F4B6F4200D86E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94C522B41F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C522B51F4B6F4200D86E83 /* Debug */,
+				94C522B61F4B6F4200D86E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94C522711F4B6F4200D86E83 /* Project object */;
+}
