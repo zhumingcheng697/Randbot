@@ -20,6 +20,7 @@
 		94C522A41F4B6F4200D86E83 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A31F4B6F4200D86E83 /* ExtensionDelegate.swift */; };
 		94C522A61F4B6F4200D86E83 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A51F4B6F4200D86E83 /* NotificationController.swift */; };
 		94C522A81F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522A71F4B6F4200D86E83 /* Assets.xcassets */; };
+		94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522B91F4B9A1400D86E83 /* LetterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		94C522A51F4B6F4200D86E83 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		94C522A71F4B6F4200D86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C522A91F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C522B91F4B9A1400D86E83 /* LetterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterViewController.swift; path = ../LetterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		94C5227B1F4B6F4200D86E83 /* Randbot */ = {
 			isa = PBXGroup;
 			children = (
+				94C522B91F4B9A1400D86E83 /* LetterViewController.swift */,
 				94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */,
 				94C5227E1F4B6F4200D86E83 /* ViewController.swift */,
 				94C522801F4B6F4200D86E83 /* Main.storyboard */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */,
+				94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */,
 				94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
