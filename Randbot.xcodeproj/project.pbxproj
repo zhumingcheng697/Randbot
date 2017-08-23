@@ -21,6 +21,8 @@
 		94C522A61F4B6F4200D86E83 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522A51F4B6F4200D86E83 /* NotificationController.swift */; };
 		94C522A81F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522A71F4B6F4200D86E83 /* Assets.xcassets */; };
 		94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522B91F4B9A1400D86E83 /* LetterViewController.swift */; };
+		94C522C01F4DEECC00D86E83 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */; };
+		94C522C21F4E4DF200D86E83 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522C11F4E4DF200D86E83 /* NumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		94C522A71F4B6F4200D86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C522A91F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C522B91F4B9A1400D86E83 /* LetterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterViewController.swift; path = ../LetterViewController.swift; sourceTree = "<group>"; };
+		94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../ColorViewController.swift; sourceTree = "<group>"; };
+		94C522C11F4E4DF200D86E83 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberViewController.swift; path = ../NumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		94C5227B1F4B6F4200D86E83 /* Randbot */ = {
 			isa = PBXGroup;
 			children = (
+				94C522C11F4E4DF200D86E83 /* NumberViewController.swift */,
+				94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */,
 				94C522B91F4B9A1400D86E83 /* LetterViewController.swift */,
 				94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */,
 				94C5227E1F4B6F4200D86E83 /* ViewController.swift */,
@@ -307,7 +313,9 @@
 			files = (
 				94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */,
 				94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */,
+				94C522C01F4DEECC00D86E83 /* ColorViewController.swift in Sources */,
 				94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */,
+				94C522C21F4E4DF200D86E83 /* NumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +576,7 @@
 				94C522AE1F4B6F4200D86E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C522B01F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +585,7 @@
 				94C522B21F4B6F4200D86E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C522B41F4B6F4200D86E83 /* Build configuration list for PBXNativeTarget "Randbot" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +594,7 @@
 				94C522B61F4B6F4200D86E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

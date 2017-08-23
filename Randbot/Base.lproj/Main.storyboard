@@ -22,9 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiF-Zh-ngs">
-                                <rect key="frame" x="25" y="55" width="115" height="39"/>
+                                <rect key="frame" x="25" y="60" width="279" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqs-WN-6zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="33"/>
+            <point key="canvasLocation" x="1192.5" y="32.74647887323944"/>
         </scene>
         <!--Letter-->
         <scene sceneID="0Qc-xa-zyB">
@@ -74,16 +74,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pl-Yg-7tM">
                                 <rect key="frame" x="250" y="368" width="30" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal">
+                                <state key="normal" title="--">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fromChoser:" destination="iK9-Uw-twx" eventType="touchUpInside" id="XVC-xq-QBf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gq0-hz-Erh">
                                 <rect key="frame" x="250" y="413" width="30" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal">
+                                <state key="normal" title="--">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toChoser:" destination="iK9-Uw-twx" eventType="touchUpInside" id="HZO-7P-ilp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gT-FQ-uPl">
                                 <rect key="frame" x="125" y="458" width="70" height="30"/>
@@ -106,29 +112,55 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpC-KE-eqa">
-                                <rect key="frame" x="25" y="55" width="82" height="39"/>
+                                <rect key="frame" x="25" y="60" width="279" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*The default range is from A to Z*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEQ-Td-bR5">
+                                <rect key="frame" x="0.0" y="480" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.67443490028381348" green="0.67455285787582397" blue="0.67442744970321655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEs-lJ-e2Y">
+                                <rect key="frame" x="0.0" y="102" width="320" height="266"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Thin" family="PingFang SC" pointSize="100"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-hE-dgq">
+                                <rect key="frame" x="262" y="27" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="iK9-Uw-twx" eventType="touchUpInside" id="ApN-nx-api"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Letter" image="A" id="AlX-Iw-OwH"/>
                     <connections>
+                        <outlet property="defaultRangeLable" destination="sEQ-Td-bR5" id="JSF-CP-v7k"/>
                         <outlet property="done" destination="2gT-FQ-uPl" id="Aiu-EJ-BjG"/>
                         <outlet property="firstChosen" destination="1Pl-Yg-7tM" id="sjj-Kx-5dS"/>
                         <outlet property="from" destination="mKq-NN-cWf" id="odf-4G-ZsU"/>
                         <outlet property="lastChosen" destination="Gq0-hz-Erh" id="qjL-FB-0Cm"/>
                         <outlet property="randomize" destination="4hK-f9-BlU" id="Trt-jh-qib"/>
+                        <outlet property="randomizedLetter" destination="bEs-lJ-e2Y" id="5Cs-Ov-2E6"/>
+                        <outlet property="resetButton" destination="mfQ-hE-dgq" id="47M-4g-Tzg"/>
                         <outlet property="to" destination="chd-tA-GnL" id="our-Qg-3PQ"/>
                         <outlet property="value" destination="iTD-li-Wku" id="g6D-Rf-vPQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwz-a7-7Fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.125" y="27.5"/>
+            <point key="canvasLocation" x="448.125" y="25.35211267605634"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="myg-G9-uwK">
@@ -149,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="-327" y="33"/>
         </scene>
-        <!--Customized-->
+        <!--Color-->
         <scene sceneID="9d1-Nv-Pod">
             <objects>
-                <viewController id="BVz-T8-DwI" sceneMemberID="viewController">
+                <viewController id="BVz-T8-DwI" customClass="ColorViewController" customModule="Randbot" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cH4-Fd-tze"/>
                         <viewControllerLayoutGuide type="bottom" id="Wxn-dK-GeV"/>
@@ -161,21 +193,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-bw-Yah">
-                                <rect key="frame" x="25" y="55" width="169" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-bw-Yah">
+                                <rect key="frame" x="25" y="60" width="279" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elE-d8-iFh">
+                                <rect key="frame" x="122" y="458" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Randomize"/>
+                                <connections>
+                                    <action selector="randomize:" destination="BVz-T8-DwI" eventType="touchUpInside" id="x1O-U9-Kv1"/>
+                                    <action selector="randomizing:" destination="iK9-Uw-twx" eventType="touchUpInside" id="lAP-Xp-hGf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-e4-1iu">
+                                <rect key="frame" x="45" y="393" width="222" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="RGB (0, 0, 0)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstLetterChoser:" destination="iK9-Uw-twx" eventType="touchUpInside" id="52h-FC-xtl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-2G-FjQ">
+                                <rect key="frame" x="85" y="126" width="150" height="238"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-yp-TRH">
+                                <rect key="frame" x="262" y="27" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="iK9-Uw-twx" eventType="touchUpInside" id="9Zf-IL-RBu"/>
+                                    <action selector="reset:" destination="BVz-T8-DwI" eventType="touchUpInside" id="h8e-f9-Ikh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Customized" image="Group" id="GhJ-X2-Afi"/>
+                    <tabBarItem key="tabBarItem" title="Color" image="Group" selectedImage="Group" id="GhJ-X2-Afi"/>
+                    <connections>
+                        <outlet property="colorShow" destination="gA1-2G-FjQ" id="adK-4u-6gi"/>
+                        <outlet property="rgbIndex" destination="Hx9-e4-1iu" id="CSj-QQ-sE5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m74-qO-DuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="33"/>
+            <point key="canvasLocation" x="1972.5" y="32.74647887323944"/>
         </scene>
     </scenes>
     <resources>

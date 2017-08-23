@@ -21,6 +21,13 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBOutlet weak var randomize: UIButton!
     
+    @IBOutlet weak var randomizedLetter: UIButton!
+    
+    @IBOutlet weak var defaultRangeLable: UILabel!
+    
+    @IBOutlet weak var resetButton: UIButton!
+    
+    
     var n : Int = 0
     var firstNum : Int = 1
     var lastNum : Int = 26
@@ -70,13 +77,12 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         return pickerData.count
     }
     
-    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
 
     
-       @IBAction func firstLetterChoser(_ sender: Any) {
+    @IBAction func firstLetterChoser(_ sender: Any) {
         value.isHidden = false
         letterChecker = false
         done.isHidden = false
@@ -85,8 +91,27 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         firstChosen.setTitleColor(.red, for: .normal)
         to.isEnabled = false
         lastChosen.isEnabled = false
+        defaultRangeLable.isHidden = true
+        randomizedLetter.isHidden = true
+        randomizedLetter.setTitle(" ", for: .normal)
+        resetButton.isEnabled = false
     }
     
+    @IBAction func fromChoser(_ sender: Any) {
+        value.isHidden = false
+        letterChecker = false
+        done.isHidden = false
+        randomize.isHidden = true
+        from.setTitleColor(.red, for: .normal)
+        firstChosen.setTitleColor(.red, for: .normal)
+        to.isEnabled = false
+        lastChosen.isEnabled = false
+        defaultRangeLable.isHidden = true
+        randomizedLetter.isHidden = true
+        randomizedLetter.setTitle(" ", for: .normal)
+        resetButton.isEnabled = false
+    }
+   
       @IBAction func lastLetterChoser(_ sender: Any) {
         value.isHidden = false
         letterChecker = true
@@ -96,9 +121,29 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         lastChosen.setTitleColor(.red, for: .normal)
         from.isEnabled = false
         firstChosen.isEnabled = false
+        defaultRangeLable.isHidden = true
+        randomizedLetter.isHidden = true
+        randomizedLetter.setTitle(" ", for: .normal)
+        resetButton.isEnabled = false
     }
     
+    @IBAction func toChoser(_ sender: Any) {
+        value.isHidden = false
+        letterChecker = true
+        done.isHidden = false
+        randomize.isHidden = true
+        to.setTitleColor(.red, for: .normal)
+        lastChosen.setTitleColor(.red, for: .normal)
+        from.isEnabled = false
+        firstChosen.isEnabled = false
+        defaultRangeLable.isHidden = true
+        randomizedLetter.isHidden = true
+        randomizedLetter.setTitle(" ", for: .normal)
+        resetButton.isEnabled = false
+    }
 
+    
+    
     @IBAction func choseDone(_ sender: Any) {
         
         let selectedValue = pickerData[value.selectedRow(inComponent: 0)]
@@ -111,6 +156,8 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         to.setTitleColor(.black, for: .normal)
         firstChosen.setTitleColor(.black, for: .normal)
         lastChosen.setTitleColor(.black, for: .normal)
+        randomizedLetter.isHidden = false
+        resetButton.isEnabled = true
         
         if letterChecker == false{
             firstChosen.setTitle(selectedValue, for: .normal)
@@ -119,7 +166,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             done.isHidden = true
             firstNum = n
             randomize.isHidden = false
-            print(firstNum)
         }
         
         else if letterChecker == true {
@@ -129,7 +175,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             done.isHidden = true
             lastNum = n
             randomize.isHidden = false
-            print(lastNum)
            }
     }
   
@@ -140,7 +185,20 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
         }
-
+        else{
+            randomizedLetter.setTitle(pickerData[Int(Double(arc4random_uniform(UInt32(Double(lastNum - firstNum + 1))))) + firstNum - 1], for: .normal)
+        }
+        
     }
-
+    
+    @IBAction func reset(_ sender: Any) {
+        randomizedLetter.setTitle(" ", for: .normal)
+        value.isHidden = true
+        firstNum = 1
+        lastNum = 26
+        firstChosen.setTitle("--", for: .normal)
+        lastChosen.setTitle("--", for: .normal)
+        defaultRangeLable.isHidden = false
+        letterChecker = nil
+    }
 }
