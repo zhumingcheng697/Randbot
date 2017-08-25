@@ -80,13 +80,11 @@ class NumberViewController: UIViewController{
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
             minimum.clearsOnBeginEditing = true
-            maximum.clearsOnBeginEditing = true
         }else if Int((maximum.text?.characters.count)!) > 5{
             var alert : UIAlertController
             alert = UIAlertController(title: "Oooops!", message: "The value you set is way too large! Try something smaller!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
-            minimum.clearsOnBeginEditing = true
             maximum.clearsOnBeginEditing = true
         }else{
             if minimum.text == "" {
