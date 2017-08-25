@@ -23,14 +23,12 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBOutlet weak var randomizedLetter: UIButton!
     
-    @IBOutlet weak var defaultRangeLable: UILabel!
-    
     @IBOutlet weak var resetButton: UIButton!
     
     
     var n : Int = 0
     var firstNum : Int = 1
-    var lastNum : Int = 26
+    var lastNum : Int = 4
 
     
     @IBOutlet weak var done: UIButton!
@@ -91,7 +89,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         firstChosen.setTitleColor(.red, for: .normal)
         to.isEnabled = false
         lastChosen.isEnabled = false
-        defaultRangeLable.isHidden = true
         randomizedLetter.isHidden = true
         randomizedLetter.setTitle(" ", for: .normal)
         resetButton.isEnabled = false
@@ -106,7 +103,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         firstChosen.setTitleColor(.red, for: .normal)
         to.isEnabled = false
         lastChosen.isEnabled = false
-        defaultRangeLable.isHidden = true
         randomizedLetter.isHidden = true
         randomizedLetter.setTitle(" ", for: .normal)
         resetButton.isEnabled = false
@@ -121,7 +117,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         lastChosen.setTitleColor(.red, for: .normal)
         from.isEnabled = false
         firstChosen.isEnabled = false
-        defaultRangeLable.isHidden = true
         randomizedLetter.isHidden = true
         randomizedLetter.setTitle(" ", for: .normal)
         resetButton.isEnabled = false
@@ -136,7 +131,6 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         lastChosen.setTitleColor(.red, for: .normal)
         from.isEnabled = false
         firstChosen.isEnabled = false
-        defaultRangeLable.isHidden = true
         randomizedLetter.isHidden = true
         randomizedLetter.setTitle(" ", for: .normal)
         resetButton.isEnabled = false
@@ -166,16 +160,21 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             done.isHidden = true
             firstNum = n
             randomize.isHidden = false
-        }
-        
-        else if letterChecker == true {
+        }else if letterChecker == true {
             lastChosen.setTitle(selectedValue, for: .normal)
             letterChecker = nil
             value.isHidden = true
             done.isHidden = true
             lastNum = n
             randomize.isHidden = false
-           }
+        }
+        
+        var alert : UIAlertController
+        if firstNum >= lastNum{
+            alert = UIAlertController(title: "Oooops!", message: "'From' value and 'to' value should be set in an alphabetical order!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
   
     @IBAction func randomizing(_ sender: Any) {
@@ -184,21 +183,18 @@ class LetterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             alert = UIAlertController(title: "Oooops!", message: "'From' value and 'to' value should be set in an alphabetical order!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true)
+        }else{
+        randomizedLetter.setTitle(pickerData[Int(Double(arc4random_uniform(UInt32(Double(lastNum - firstNum + 1))))) + firstNum - 1], for: .normal)
         }
-        else{
-            randomizedLetter.setTitle(pickerData[Int(Double(arc4random_uniform(UInt32(Double(lastNum - firstNum + 1))))) + firstNum - 1], for: .normal)
-        }
-        
     }
     
     @IBAction func reset(_ sender: Any) {
         randomizedLetter.setTitle(" ", for: .normal)
         value.isHidden = true
         firstNum = 1
-        lastNum = 26
-        firstChosen.setTitle("--", for: .normal)
-        lastChosen.setTitle("--", for: .normal)
-        defaultRangeLable.isHidden = false
+        lastNum = 4
+        firstChosen.setTitle("A", for: .normal)
+        lastChosen.setTitle("D", for: .normal)
         letterChecker = nil
     }
 }

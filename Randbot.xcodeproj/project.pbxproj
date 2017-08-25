@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		949A2C451F50A119005A095E /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949A2C441F50A119005A095E /* TextField.swift */; };
 		94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */; };
 		94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5227E1F4B6F4200D86E83 /* ViewController.swift */; };
 		94C522821F4B6F4200D86E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C522801F4B6F4200D86E83 /* Main.storyboard */; };
@@ -22,7 +23,9 @@
 		94C522A81F4B6F4200D86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C522A71F4B6F4200D86E83 /* Assets.xcassets */; };
 		94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522B91F4B9A1400D86E83 /* LetterViewController.swift */; };
 		94C522C01F4DEECC00D86E83 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */; };
-		94C522C21F4E4DF200D86E83 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522C11F4E4DF200D86E83 /* NumberViewController.swift */; };
+		94C522C41F4E53ED00D86E83 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522C31F4E53ED00D86E83 /* NumberViewController.swift */; };
+		94C522C61F4F884F00D86E83 /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522C51F4F884F00D86E83 /* DecisionViewController.swift */; };
+		94C522C91F5090B100D86E83 /* AllowedCharsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C522C71F5090B100D86E83 /* AllowedCharsTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		949A2C441F50A119005A095E /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = ../TextField.swift; sourceTree = "<group>"; };
 		94C522791F4B6F4200D86E83 /* Randbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randbot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94C5227E1F4B6F4200D86E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +92,9 @@
 		94C522A91F4B6F4200D86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C522B91F4B9A1400D86E83 /* LetterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterViewController.swift; path = ../LetterViewController.swift; sourceTree = "<group>"; };
 		94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../ColorViewController.swift; sourceTree = "<group>"; };
-		94C522C11F4E4DF200D86E83 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberViewController.swift; path = ../NumberViewController.swift; sourceTree = "<group>"; };
+		94C522C31F4E53ED00D86E83 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberViewController.swift; path = ../NumberViewController.swift; sourceTree = "<group>"; };
+		94C522C51F4F884F00D86E83 /* DecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecisionViewController.swift; path = ../DecisionViewController.swift; sourceTree = "<group>"; };
+		94C522C71F5090B100D86E83 /* AllowedCharsTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllowedCharsTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +138,10 @@
 		94C5227B1F4B6F4200D86E83 /* Randbot */ = {
 			isa = PBXGroup;
 			children = (
-				94C522C11F4E4DF200D86E83 /* NumberViewController.swift */,
+				949A2C441F50A119005A095E /* TextField.swift */,
+				94C522C71F5090B100D86E83 /* AllowedCharsTextField.swift */,
+				94C522C51F4F884F00D86E83 /* DecisionViewController.swift */,
+				94C522C31F4E53ED00D86E83 /* NumberViewController.swift */,
 				94C522BF1F4DEECC00D86E83 /* ColorViewController.swift */,
 				94C522B91F4B9A1400D86E83 /* LetterViewController.swift */,
 				94C5227C1F4B6F4200D86E83 /* AppDelegate.swift */,
@@ -314,8 +323,11 @@
 				94C5227F1F4B6F4200D86E83 /* ViewController.swift in Sources */,
 				94C522BA1F4B9A1400D86E83 /* LetterViewController.swift in Sources */,
 				94C522C01F4DEECC00D86E83 /* ColorViewController.swift in Sources */,
+				949A2C451F50A119005A095E /* TextField.swift in Sources */,
 				94C5227D1F4B6F4200D86E83 /* AppDelegate.swift in Sources */,
-				94C522C21F4E4DF200D86E83 /* NumberViewController.swift in Sources */,
+				94C522C61F4F884F00D86E83 /* DecisionViewController.swift in Sources */,
+				94C522C41F4E53ED00D86E83 /* NumberViewController.swift in Sources */,
+				94C522C91F5090B100D86E83 /* AllowedCharsTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

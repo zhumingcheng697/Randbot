@@ -14,13 +14,13 @@ class ColorViewController: UIViewController {
     
     @IBOutlet weak var rgbIndex: UIButton!
     
-    var r: Int = 0
-    var g: Int = 0
-    var b: Int = 0
+    var r: Int = 255
+    var g: Int = 255
+    var b: Int = 255
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorShow.layer.cornerRadius = 7
+        colorShow.layer.cornerRadius = 6
 
         // Do any additional setup after loading the view.
     }
@@ -39,8 +39,8 @@ class ColorViewController: UIViewController {
     }
 
     @IBAction func reset(_ sender: Any) {
-        colorShow.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
-        rgbIndex.setTitle("RGB (0, 0, 0)", for: .normal)
+        colorShow.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0)
+        rgbIndex.setTitle("RGB (255, 255, 255)", for: .normal)
 
     }
     /*
